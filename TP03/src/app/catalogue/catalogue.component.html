@@ -1,3 +1,5 @@
-<h1>catalogue works!</h1>
+<h1>TP03 Tom PRIETO</h1>
+<app-liste-produits [produits]="produitsAvecFiltre"></app-liste-produits>
 
-<p *ngFor="let objet of produits | async"> Référence : {{ objet.ref }} - Description : {{ objet.desc }} - Prix : {{ objet.prix }} $ -  Stock : {{ objet.stock }} </p> 
+
+<app-barre-recherche (recherche)="rechercher($event)"></app-barre-recherche>
