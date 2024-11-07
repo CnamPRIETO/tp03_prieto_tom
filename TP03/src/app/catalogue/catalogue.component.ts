@@ -13,7 +13,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './catalogue.component.html',
   styleUrl: './catalogue.component.css'
 })
-export class CatalogueComponent implements OnInit{
+export class CatalogueComponent implements OnInit, OnDestroy {
   produits : Produit[] = [];
   produitsAvecFiltre : Produit[] = [];
   private subscription: Subscription = new Subscription();
